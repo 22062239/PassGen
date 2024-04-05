@@ -6,6 +6,7 @@ import random
 passlength = int(input("Enter password length: "))
 if (passlength <= 0):
         print("Password length not sufficient, please try again")
+        
 else: 
     print('''Choose character set for password from these : 
          1. Digits
@@ -40,9 +41,6 @@ while(True):
     else:
         print("Please pick a valid option!")
     
-    
-
- 
 password = []
  
 for i in range(passlength):
@@ -62,3 +60,6 @@ if(characterList == ""):
     print("Could not generate password")
 else:
     print("The random password is " + "".join(password))
+
+# Keep the terminal open until user presses Enter
+input("Press Enter to exit...")
